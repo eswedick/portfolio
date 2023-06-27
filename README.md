@@ -1,2 +1,2 @@
-# portolio
+# portfolio
 a personal portfolio website
