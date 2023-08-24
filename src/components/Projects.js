@@ -6,36 +6,29 @@ const Projects = () => {
     const projects = [
         {
             img: project,
-            title: "Project 1",
+            title: "",
             desc: "",
             live: "",
             code: "",
         },
         {
             img: project,
-            title: "Project 2",
-            desc: "",
+            title: "Woodstock",
+            desc: "A document sharing app built with ASP.NET Blazor Server, Dapper, and SQL",
             live: "",
             code: "",
         },
         {
             img: project,
-            title: "Project 3",
-            desc: "",
-            live: "",
-            code: "",
-        },
-        {
-            img: project,
-            title: "Project 4",
-            desc: "",
+            title: "Portfolio",
+            desc: "A simple portfolio site built with Next, React, And Tailwind",
             live: "",
             code: "",
         }
     ];
 
     return (
-        <section className="bg-primary text-white px-5 py-32" id="projects">
+        <section className="bg-primary text-white px-5 py-32 h-screen" id="projects">
             <div className="container mx-auto grid md:grid-cols-1 items-center md:justify-between">
                 <div className="about-info mb-5">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2 mx-auto">
