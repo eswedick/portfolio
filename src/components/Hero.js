@@ -1,11 +1,11 @@
-import React from "react";
-// import HeroImg from "../assets/hero-img.png";
+import HeroImg from "/public/static/portfolio.jpg"
 
 import {
     AiOutlineGitlab,
     AiOutlineGithub,
     AiOutlineLinkedin
 } from "react-icons/ai";
+import Image from "next/image";
 
 const Hero = () => {
     return (
@@ -17,7 +17,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="py-5 mx-auto">
-                        A full stack developer
+                        A full stack software engineer
                     </p>
 
                     {/*links*/}
@@ -38,7 +38,7 @@ const Hero = () => {
                             <AiOutlineGithub size={40} />{" "}
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/evan-swedick-48699111a/"
+                            href="https://www.linkedin.com/in/evan-swedick/"
                             className="pr-4 inline-block text-accent hover:text-white"
                         >
                             {" "}
@@ -54,13 +54,13 @@ const Hero = () => {
                     </a>
                 </div>
 
-                {/*<div className="hero-img">*/}
-                {/*    <img*/}
-                {/*        // src={HeroImg}*/}
-                {/*        alt="coding illustration"*/}
-                {/*        className="lgw-[80%] ml-auto"*/}
-                {/*    />*/}
-                {/*</div>*/}
+                <div className="ml-auto rounded-full h-96 w-96 ml-auto overflow-hidden" style={{filter: 'grayscale(30%)'}}>
+                    <Image
+                        src={HeroImg}
+                        alt="profile picture"
+                        //style={{borderRadius: '50%'}}
+                    />
+                </div>
             </div>
         </section>
     );

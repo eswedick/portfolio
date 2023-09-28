@@ -1,5 +1,6 @@
 import React from "react";
-// import AboutImg from "../assets/about-img.png";
+import catTax from "/public/static/cats.JPG";
+import Image from "next/image";
 
 const About = () => {
     return (
@@ -11,12 +12,15 @@ const About = () => {
                     </h2>
 
                     <p className="pb-5">
-                        Hi, My name is Evan Swedick. I am a
-                        Full Stack Developer. I build beautiful websites and applications with a number of technologies.
+                        My name is Evan Swedick. I am a Full Stack Software Engineer.
                     </p>
 
                     <p className="pb-5">
-                        I am proficient in Frontend technologies like ASP.Net, Blazor, React, NextJs, MaterialUI,
+                        I build beautiful applications with a number of technologies.
+                    </p>
+
+                    <p className="pb-5">
+                        I am proficient in Frontend technologies like ASP.NET, Blazor, React, NextJs, MaterialUI,
                         TailwindCSS
                     </p>
 
@@ -26,15 +30,14 @@ const About = () => {
                         as well as ORMs like SqlAlchemy, Sequelize, Dapper, and Entity Framework.</p>
 
                     <p className="pb-5">
-                        In my spare time I enjoy camping and playing music with my friends.
+                        In my spare time I enjoy camping, hanging with my cats, and playing music with my friends.
                     </p>
                 </div>
 
-                <div className="about-img">
-                    <img
-                        // src={AboutImg}
-                        alt="coding illustration"
-                        className="lgw-[80%] md:ml-auto"
+                <div className="ml-auto h-120 w-96 overflow-hidden" style={{filter: 'grayscale(30%)'}}>
+                    <Image
+                        src={catTax}
+                        alt="cat tax"
                     />
                 </div>
             </div>

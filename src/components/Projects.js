@@ -1,29 +1,31 @@
 import React from "react";
 import Image from 'next/image'
 import project from "../../public/static/code.jpg";
+import reactAuth from "/src/assets/react-auth-login.png";
+import portScreenshot from "/src/assets/port-screenshot.png";
 
 const Projects = () => {
     const projects = [
         {
-            img: project,
-            title: "",
-            desc: "",
+            img: reactAuth,
+            title: "React Auth",
+            desc: "A React Typescript MaterialUI client, Express NodeJS MySQL server with user creation and JWT auth",
             live: "",
-            code: "",
+            code: "https://git.swedick.io/evan/react-auth-base",
         },
         {
             img: project,
             title: "Woodstock",
-            desc: "A document sharing app built with ASP.NET Blazor Server, Dapper, and SQL",
+            desc: "A document sharing app built with ASP.NET Blazor Server, Dapper, and SQL Server",
             live: "",
-            code: "",
+            code: "https://git.swedick.io/evan/woodstock",
         },
         {
-            img: project,
+            img: portScreenshot,
             title: "Portfolio",
             desc: "A simple portfolio site built with Next, React, And Tailwind",
             live: "",
-            code: "",
+            code: "https://github.com/eswedick/portfolio",
         }
     ];
 
@@ -35,7 +37,7 @@ const Projects = () => {
                         Projects
                     </h2>
 
-                    <p className="pb-5">
+                    <p className="pb-5 text-2xl">
                         These are some of my recent projects
                     </p>
                 </div>
@@ -56,12 +58,18 @@ const Projects = () => {
                                 <div className="mx-auto">
                                     <a
                                         href={project.live}
+                                        style={{
+                                            display: project.live === "" ? "none": "block"
+                                        }}
                                         className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
                                     >
                                         Live
                                     </a>
                                     <a
                                         href={project.code}
+                                        style={{
+                                            display: project.code === "" ? "none": "block"
+                                        }}
                                         className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
                                     >
                                         Code
