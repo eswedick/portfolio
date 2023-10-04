@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        <section className="bg-secondary text-white px-5 py-32 h-screen" id="about">
+        <section className="bg-secondary text-white px-5 py-32" id="about">
             <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
-                <div className="about-info">
+                <div className="about-info px-5">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-sky-400 pb-2">
                         About Me
                     </h2>
@@ -34,7 +34,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className="ml-auto h-120 w-96 overflow-hidden" style={{filter: 'grayscale(30%)'}}>
+                <div className="ml-auto max-w-screen-md px-5 py-5 md:px-10 md:py-10 lg:px-20 lg:py-20 max-h-1/2 overflow-hidden" style={{filter: 'grayscale(30%)'}}>
                     <Image
                         src={catTax}
                         alt="cat tax"
